@@ -1,0 +1,126 @@
+.footer {
+    background: url(../img/background-image3.jpg) no-repeat;
+    background-size: cover;
+    max-width: 100%;
+    max-height: 620px;
+  }
+  
+  .container-footer {
+    max-width: 1845px;
+    margin: 0 auto;
+    padding: 100px 150px 100px 150px;
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .footer-left__content {
+    color: #fff;
+  }
+  
+  .footer__phone {
+    font-size: 25px;
+    font-weight: 700;
+  }
+  
+  .footer__address {
+    margin-top: 15px;
+  }
+  
+  .footer__email {
+    margin-top: 5px;
+  }
+  
+  .footer__links {
+    margin-top: 20px;
+  }
+  
+  .twitter {
+    width: 40px;
+    margin-right: 20px;
+    background: #af372e;
+    padding: 10px;
+    border-radius: 50%;
+  }
+  
+  .facebook {
+    width: 36px;
+    padding: 10px 14px;
+    margin-right: 20px;
+    background: #af372e;
+    border-radius: 50%;
+  }
+  
+  .instagram {
+    padding: 10px;
+    width: 38px;
+    background: #af372e;
+    border-radius: 50%;
+  }
+  
+  .footer-btn {
+    float: center;
+    width: 235px;
+    padding: 15px 45px;
+    background: red;
+    border-radius: 10px;
+  }
+  
+  .footer-btn a {
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+    font-size: 18px;
+  }
+  
+  .footer-btn a:hover {
+    color: #fff;
+    text-decoration: none;
+    box-shadow: 0 0 20px rgba(255,36,0,1);
+  }
+  
+  .footer-btn:hover {
+    box-shadow: 0 0 20px rgba(255,36,0,1);
+  }
+  
+  .footer__end {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 100px;
+    color: #fff;
+    font-size: 15px;
+  }
+  
+  .footer__right {
+    border-bottom: 1px solid #fff;
+    cursor: pointer;
+  }
+
+  @media screen and (max-width: 830px) {
+      .footer-content {
+          flex-wrap: wrap;
+      }
+
+      .footer__end {
+          flex-wrap: wrap;
+      }
+  }
+
+  @media screen and (max-width: 562px) {
+    .container-footer {
+        padding: 50px 50px 50px 50px;
+    }
+    .footer__email {
+        margin-top: 15px;
+    }
+
+    .footer-btn {
+        margin-top: 20px;
+    }
+
+    .footer__right {
+        margin-top: 20px;
+    }
+  }

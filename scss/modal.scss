@@ -1,0 +1,194 @@
+.overlay {
+    display: none;
+  }
+  
+  .modal-overlay {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    z-index: 222;
+    background-color: #162130;
+    width: 100%;
+    height: 100vh;
+  }
+
+  .modal-nav {
+    padding: 0 0 0 75px;
+  }
+  
+  .modal-header__logo img {
+    position: relative;
+  }
+  
+  .modal-header__logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+    height: 150px;
+    background-color: #fff;
+  }
+  
+  .modal-header__close img{
+    width: 18px;
+  }
+  
+  .modal-menu {
+    padding-top: 70px;
+    padding-left: 20px;
+  }
+  
+  .modal-menu__item {
+    text-decoration: none;
+    margin-bottom: 30px;
+  }
+  
+  .modal-menu__item a {
+    font-size: 25px;
+    color: #fff;
+  }
+  
+  .modal-about {
+    padding-right: 75px;
+    width: 550px;
+    height: 100vh;
+    background: #20323e;
+  }
+  
+  .modal-about__close {
+    float: right;
+    cursor: pointer;
+    margin-top: 75px;
+  }
+  
+  .modal-about__close img{
+    width: 25px;
+  }
+  
+  .modal-about__image {
+    padding-top: 180px;
+    margin-left: 135px;
+  }
+  
+  .modal-about__image img{
+    width: 300px;
+  }
+  
+  .modal-about__info {
+    margin-left: 155px;
+    margin-top: 100px;
+    color: #fff;
+  }
+  
+  .info__phone {
+    font-size: 35px;
+    font-weight: 700;
+  }
+  
+  .info__city {
+    margin-top: 30px;
+    font-size: 15px;
+  }
+  
+  .info__address {
+    font-size: 15px;
+  }
+  
+  .info__email {
+    margin-top: 30px;
+    font-size: 14px;
+  }
+  
+  .info__btn {
+    width: 255px;
+    margin-top: 30px;
+    padding: 15px 45px;
+    background: red;
+    border: 1px solid red;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 700;
+    transition: all .3s ease;
+  }
+  
+  .info__btn:hover {
+    box-shadow: 0 0 20px rgba(255,36,0,1);
+  }
+  
+  .info__btn a{
+    color: white;
+  }
+  
+  .info__btn a:hover {
+    text-decoration: none;
+    color: white;
+  }
+  
+  .show-menu {
+    display: block;
+    animation: slide-menu 0.3s ease-in;
+  }
+  
+  @keyframes slide-menu {
+    from {
+      transform: scaleY(0);
+    }
+    to {
+      transform: scaleY(1);
+    }
+  }
+
+  @media screen and (max-width: 755px) {
+      .modal-overlay {
+          flex-direction: column;
+      }
+
+      .modal-about {
+        width: 100%;
+      }
+  }
+
+  @media screen and (max-width: 455px) {
+    .modal-about__image {
+      margin-left: 70px;
+      padding-top: 140px;
+    }
+
+    .modal-about__image img{
+      width: 200px;
+    }
+
+    .modal-about__info {
+      margin-left: 90px;
+      margin-top: 50px;
+    }
+
+    .info__phone {
+      font-size: 25px;
+    }
+
+    .info__btn {
+      width: 220px;
+      margin-top: 30px;
+      padding: 15px 45px;
+      background: red;
+      border: 1px solid red;
+      border-radius: 10px;
+      color: #fff;
+      font-size: 16px;
+      font-weight: 700;
+      transition: all .3s ease;
+    }
+
+    .modal-about__close {
+      margin-top: 50px;
+    }
+
+}
+
+@media screen and (max-width: 1024px), (max-height: 768px) {
+  .modal-about__info {
+    margin-top: 35px;
+  }
+}
